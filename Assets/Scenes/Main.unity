@@ -14522,8 +14522,8 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damage: 0
-  pushForce: 0
+  damage: 2
+  pushForce: 5
 --- !u!1 &939625203
 GameObject:
   m_ObjectHideFlags: 0
@@ -20015,7 +20015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 067e7d3202b56a4408b6548dcfcbb8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoint: 10
+  hitPoint: 4
   maxHitpoint: 10
   pushRecoverySpeed: 0.2
 --- !u!1 &1086145080
@@ -20221,7 +20221,7 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   damagePoint: 1
-  pushForce: 2
+  pushForce: 0.1
   weaponLevel: 0
 --- !u!1 &1331019819
 GameObject:

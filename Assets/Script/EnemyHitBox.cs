@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemyHitBox : Collidable
 {
     // Damage
-    public int damage;
-    public int pushForce;
+    public int damage = 1;
+    public int pushForce = 5;
     protected override void OnCollide(Collider2D coll)
     {
         if (coll.tag == "Fighter" && coll.name == "Player")
