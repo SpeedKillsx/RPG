@@ -20111,13 +20111,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1120352743}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.063, y: 0.093, z: 0}
-  m_LocalScale: {x: 0.57256, y: 0.7, z: 0}
+  m_LocalRotation: {x: -0.0016437348, y: -0.0000029094176, z: 0.0017699744, w: 0.9999971}
+  m_LocalPosition: {x: 0.063, y: 0.101, z: -0}
+  m_LocalScale: {x: 0.61550206, y: 0.7, z: 0}
   m_Children: []
   m_Father: {fileID: 955838310}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.188, y: -0.001, z: 0.203}
 --- !u!212 &1120352745
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20221,7 +20221,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damagePoint: 1
+  damagePoint: 2
   pushForce: 0.1
   weaponLevel: 0
 --- !u!95 &1120352748
@@ -20234,7 +20234,7 @@ Animator:
   m_GameObject: {fileID: 1120352743}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f151602054288a74c94e9846217f7f37, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
