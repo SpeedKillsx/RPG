@@ -14316,7 +14316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756627994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.693, y: 0.024, z: -0.252}
+  m_LocalPosition: {x: 0.717, y: 0.497, z: -0.252}
   m_LocalScale: {x: 1.5, y: 1.15, z: 0}
   m_Children:
   - {fileID: 857928170}
@@ -20096,6 +20096,7 @@ GameObject:
   - component: {fileID: 1120352745}
   - component: {fileID: 1120352746}
   - component: {fileID: 1120352747}
+  - component: {fileID: 1120352748}
   m_Layer: 0
   m_Name: weapon_0
   m_TagString: Untagged
@@ -20223,6 +20224,25 @@ MonoBehaviour:
   damagePoint: 1
   pushForce: 0.1
   weaponLevel: 0
+--- !u!95 &1120352748
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120352743}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1331019819
 GameObject:
   m_ObjectHideFlags: 0
