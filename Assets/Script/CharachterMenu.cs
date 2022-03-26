@@ -75,8 +75,10 @@ public class CharachterMenu : MonoBehaviour
     {
         // Weapon
        // Upgrade to the next weapon
+       
         if (indexWeaponLevel  < GameManager.instance.weaponPrices.Count)
         {   // Increment the index
+            Debug.Log(indexWeaponLevel);
             indexWeaponLevel++;
             weaponSprite.sprite = GameManager.instance.weaponSprites[indexWeaponLevel];
             if (GameManager.instance.weapon.weaponLevel == GameManager.instance.weaponPrices.Count)
@@ -88,24 +90,38 @@ public class CharachterMenu : MonoBehaviour
                 upgradeCostText.text = GameManager.instance.weaponPrices[GameManager.instance.weapon.weaponLevel].ToString();
             }
         }
-        else
-        {
-            weaponSprite.sprite = GameManager.instance.weaponSprites[indexWeaponLevel];
-        }
+        
         // Meta
 
         hitpointText.text = GameManager.instance.player.hitPoint.ToString();
         pesosText.text = GameManager.instance.pesos.ToString();
 
         // Level
-        levelText.text = "Not implemented";
+        levelText.text = GameManager.instance.GetcurrentLevel().ToString();
 
 
         // Xp Bar
+        int currentLevel = GameManager.instance.GetcurrentLevel();
+        if (currentLevel== GameManager.instance.xpTable.Count)
+        {
+            xpText.text = GameManager.instance.experience.ToString()+ "total experience points";
+            xpBar.localScale = Vector3.one;
+        }
+        else
+        {
+            int prevLevelXp = GameManager.instance.GetXpToLevel(currentLevel - 1);
+            int currentLevelXp = GameManager.instance.GetXpToLevel(currentLevel);
 
-        xpText.text = "Not implemented";
+            int diff = currentLevelXp - prevLevelXp;
 
-        xpBar.localScale = new Vector3(0.5f, 0, 0);
+            int currentXpIntoLevel = GameManager.instance.experience - prevLevelXp;
 
+            float completionRatio = (float)currentXpIntoLevel / (float)diff;
+
+            xpBar.localScale = new Vector3(completionRatio, 1, 1);
+            xpText.text = currentXpIntoLevel.ToString() + " / " + diff;
+        }
+
+   
     }
 }

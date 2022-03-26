@@ -59,6 +59,37 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
+    //Experience Ssystem
+    public int GetcurrentLevel()
+    {
+        int r = 0;
+        int add = 0;
+
+        while(experience >= add)
+        {
+            add += xpTable[r];
+            r++;
+
+            if(r == xpTable.Count)
+            {
+                return r;
+            }
+        }
+
+        return r;
+    }
+    public int GetXpToLevel(int level)
+    {
+        int r = 0;
+        int xp = 0;
+        while(r < level)
+        {
+            xp += xpTable[r];
+            r++;
+        }
+        return r;
+    }
+    
     // Save the state of the game
     /*
      * INT PreferedSkin 
