@@ -14,7 +14,7 @@ public class CharachterMenu : MonoBehaviour
     public Image charahcterSelectionSprite;
     public Image weaponSprite;
     public RectTransform xpBar;
-
+    public static int indexWeaponLevel = 0;
     //Charachter Selection
     public void OnArrowClick(bool right)
     {
@@ -73,8 +73,24 @@ public class CharachterMenu : MonoBehaviour
     public void UpdateMenu()
     {
         // Weapon
-        weaponSprite.sprite = GameManager.instance.weaponSprites[GameManager.instance.weapon.weaponLevel];
-        upgradeCostText.text = "Not implemented";
+       
+        if (indexWeaponLevel  < GameManager.instance.weaponPrices.Count)
+        {
+            indexWeaponLevel++;
+            weaponSprite.sprite = GameManager.instance.weaponSprites[indexWeaponLevel];
+            if (GameManager.instance.weapon.weaponLevel == GameManager.instance.weaponPrices.Count)
+            {
+                upgradeCostText.text = "Max";
+            }
+            else
+            {
+                upgradeCostText.text = GameManager.instance.weaponPrices[GameManager.instance.weapon.weaponLevel].ToString();
+            }
+        }
+        else
+        {
+            weaponSprite.sprite = GameManager.instance.weaponSprites[indexWeaponLevel];
+        }
         // Meta
 
         hitpointText.text = GameManager.instance.player.hitPoint.ToString();

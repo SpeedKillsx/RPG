@@ -5,7 +5,7 @@ using UnityEngine;
 public class Weapon : Collidable
 {
     public int[] damagePoint = {1,2,3,4,5,6,7};
-    public float[] pushForce = { 2.0f,3.0f, 5.0f, 6.0f, 6.0f, 6.0f, 7.0f};
+    public float[] pushForce = { 2.0f,5.0f, 5.0f, 6.0f, 6.0f, 6.0f, 7.0f};
 
 
     //Upgrade section
