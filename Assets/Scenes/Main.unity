@@ -21040,7 +21040,7 @@ GameObject:
   - component: {fileID: 1119567564}
   - component: {fileID: 1119567563}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: RightArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21109,7 +21109,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1119567564}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 679564529}
+        m_TargetAssemblyTypeName: CharachterMenu, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1119567564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21460,7 +21472,7 @@ GameObject:
   - component: {fileID: 1293063849}
   - component: {fileID: 1293063848}
   m_Layer: 5
-  m_Name: Button
+  m_Name: LeftArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21529,7 +21541,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1293063849}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 679564529}
+        m_TargetAssemblyTypeName: CharachterMenu, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1293063849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26210,7 +26234,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e2c13b88af990240a81bcc289fd4bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palyerSprites: []
+  palyerSprites:
+  - {fileID: -4869357254534750094, guid: 72bc6e85e1f334f4492b04fa32a3c62a, type: 3}
+  - {fileID: -6721728136321296765, guid: 72bc6e85e1f334f4492b04fa32a3c62a, type: 3}
+  - {fileID: 4101294306171259788, guid: 72bc6e85e1f334f4492b04fa32a3c62a, type: 3}
   weaponSprites:
   - {fileID: -7566632554201152900, guid: 72bc6e85e1f334f4492b04fa32a3c62a, type: 3}
   - {fileID: 8970763576347242229, guid: 72bc6e85e1f334f4492b04fa32a3c62a, type: 3}
@@ -26220,7 +26247,7 @@ MonoBehaviour:
   - {fileID: 5035139237759867391, guid: 72bc6e85e1f334f4492b04fa32a3c62a, type: 3}
   - {fileID: 6913638643635410091, guid: 72bc6e85e1f334f4492b04fa32a3c62a, type: 3}
   weaponPrices: 04000000050000000600000008000000090000000a000000
-  xpTable: 
+  xpTable: 050000000a0000001100000019000000250000003200000064000000c8000000f4010000e8030000
   player: {fileID: 955838312}
   weapon: {fileID: 1120352747}
   floatingText: {fileID: 624701032}

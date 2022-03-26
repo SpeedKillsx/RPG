@@ -54,6 +54,7 @@ public class CharachterMenu : MonoBehaviour
     private void OnSelectionChnaged()
     {
         charahcterSelectionSprite.sprite = GameManager.instance.palyerSprites[currentCharacterSelection];
+        GameManager.instance.player.SwapSprite(currentCharacterSelection);
     }
 
     // Weapon Upgrade
@@ -73,9 +74,9 @@ public class CharachterMenu : MonoBehaviour
     public void UpdateMenu()
     {
         // Weapon
-       
+       // Upgrade to the next weapon
         if (indexWeaponLevel  < GameManager.instance.weaponPrices.Count)
-        {
+        {   // Increment the index
             indexWeaponLevel++;
             weaponSprite.sprite = GameManager.instance.weaponSprites[indexWeaponLevel];
             if (GameManager.instance.weapon.weaponLevel == GameManager.instance.weaponPrices.Count)
