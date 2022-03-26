@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Fighter
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -12,8 +11,6 @@ TagManager:
   - 
   - Water
   - UI
-  - Actor
-  - Blocking
   - 
   - 
   - 
@@ -28,7 +25,9 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Layer 1
+  - Layer 2
+  - Layer 3
   - 
   - 
   - 
@@ -42,18 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Design
-    uniqueID: 2469650035
+  - name: Layer 1
+    uniqueID: 2425651459
     locked: 0
-  - name: Floor
-    uniqueID: 4207198477
+  - name: Layer 2
+    uniqueID: 4250941897
     locked: 0
-  - name: Actor
-    uniqueID: 3964670405
-    locked: 0
-  - name: Interactive
-    uniqueID: 2768268689
-    locked: 0
-  - name: Weapon
-    uniqueID: 3526676047
+  - name: Layer 3
+    uniqueID: 4189426099
     locked: 0
