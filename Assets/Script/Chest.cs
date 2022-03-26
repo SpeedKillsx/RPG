@@ -13,7 +13,7 @@ public class Chest : Collectable
             base.OnCollect();
             GetComponent<SpriteRenderer>().sprite = emptyChest;
             GameManager.instance.ShowText("+" + pesosAmount + "pesos!", 25, Color.yellow, transform.position, Vector3.up * 5, 3.0f) ;
-            GameManager.instance.pesos = GameManager.instance.pesos + 1;
+            GameManager.instance.pesos = GameManager.instance.pesos + pesosAmount;
         }
     }
 }

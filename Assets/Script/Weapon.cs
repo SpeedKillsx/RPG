@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Weapon : Collidable
 {
-    public int damagePoint = 1;
-    public float pushForce = 2.0f;
+    public int[] damagePoint = {1,2,3,4,5,6,7};
+    public float[] pushForce = { 2.0f,3.0f, 5.0f, 6.0f, 6.0f, 6.0f, 7.0f};
 
 
     //Upgrade section
     public int weaponLevel = 0;
-    private SpriteRenderer spriteRenderer;
+    public  SpriteRenderer spriteRenderer;
 
+  
     // Swing
     private Animator anim;
     private float cooldown = 0.5f;
@@ -21,7 +22,7 @@ public class Weapon : Collidable
     protected override void Start()
     {
         base.Start();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+     
         anim = GetComponent<Animator>();
     }
 
@@ -54,9 +55,9 @@ public class Weapon : Collidable
 
                 Damage dmg = new Damage
                 {
-                    damageAmount = damagePoint,
+                    damageAmount = damagePoint[weaponLevel],
                     origin = transform.position,
-                    pushForce = pushForce
+                    pushForce = pushForce[weaponLevel]
                 };
 
                 coll.SendMessage("ReceiveDamage", dmg);
@@ -66,5 +67,19 @@ public class Weapon : Collidable
             }
             
         }
+    }
+
+    public void UpgradeWeapon()
+    {
+        weaponLevel++;
+        spriteRenderer.sprite = GameManager.instance.weaponSprites[weaponLevel];
+
+        // Change the stats %%
+    }
+
+    public void SetWeaponLevel(int level)
+    {
+        weaponLevel = level;
+        spriteRenderer.sprite = GameManager.instance.weaponSprites[weaponLevel];
     }
 }

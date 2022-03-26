@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     //References
     public Player player;
+    public Weapon weapon;
     public FloatingTextManager floatingText;
     //Logic
     public int pesos;
@@ -38,6 +39,25 @@ public class GameManager : MonoBehaviour
         floatingText.Show(msg, fontSize, color, pos, motion, duration);
     }
 
+    //Upgrade Weapon
+
+    public bool TryUpgradeWeapon()
+    {
+        // Is the weapon max level ?
+        if(weaponPrices.Count <= weapon.weaponLevel)
+        {
+            return false;
+        }
+
+        if (pesos >= weaponPrices[weapon.weaponLevel])
+        {
+            pesos -= weaponPrices[weapon.weaponLevel];
+            weapon.UpgradeWeapon();
+            return true;
+        }
+
+        return false;
+    }
 
     // Save the state of the game
     /*
@@ -53,7 +73,7 @@ public class GameManager : MonoBehaviour
         s += "0" + "|";
         s += pesos.ToString() + "|";
         s += experience.ToString() + "|";
-        s += "0";
+        s += weapon.weaponLevel.ToString();
         //print(s);
         PlayerPrefs.SetString("SaveState", s);
     }
@@ -77,6 +97,7 @@ public class GameManager : MonoBehaviour
         // charge Experience
         experience = int.Parse(data[2]);
         // charge weapons 
+        weapon.SetWeaponLevel(int.Parse(data[3]));
         
     }
 }
