@@ -77,7 +77,7 @@ public class Ennemy : Mover
     protected override void Death()
     {
         Destroy(gameObject);
-        GameManager.instance.experience += xpValue;
+        GameManager.instance.GrantXp( xpValue);
         GameManager.instance.ShowText("+" + xpValue + "Xp ", 30, Color.green, transform.position, Vector3.up * 40,1.0f );
     }
 }

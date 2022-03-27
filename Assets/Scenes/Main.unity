@@ -3014,6 +3014,7 @@ MonoBehaviour:
   charahcterSelectionSprite: {fileID: 139567201}
   weaponSprite: {fileID: 1555673968}
   xpBar: {fileID: 786358975}
+  indexWeaponLevel: 0
 --- !u!1 &725551711
 GameObject:
   m_ObjectHideFlags: 0
@@ -15069,7 +15070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc2c956ef80850648b678c49806b856d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoint: 3
+  hitPoint: 1
   maxHitpoint: 4
   pushRecoverySpeed: 0.2
   xpValue: 1
@@ -20877,8 +20878,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 067e7d3202b56a4408b6548dcfcbb8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoint: 4
-  maxHitpoint: 10
+  hitPoint: 5
+  maxHitpoint: 5
   pushRecoverySpeed: 0.2
 --- !u!1 &970575375
 GameObject:
@@ -26247,12 +26248,12 @@ MonoBehaviour:
   - {fileID: 5035139237759867391, guid: 72bc6e85e1f334f4492b04fa32a3c62a, type: 3}
   - {fileID: 6913638643635410091, guid: 72bc6e85e1f334f4492b04fa32a3c62a, type: 3}
   weaponPrices: 04000000050000000600000008000000090000000a000000
-  xpTable: 050000000a0000001100000019000000250000003200000064000000c8000000f4010000e8030000
+  xpTable: 050000000f0000001400000028000000320000004600000064000000c8000000f4010000e8030000
   player: {fileID: 955838312}
   weapon: {fileID: 1120352747}
   floatingText: {fileID: 624701032}
   pesos: 0
-  experience: 0
+  experience: 5
 --- !u!4 &1973737172
 Transform:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public class CharachterMenu : MonoBehaviour
     public Image charahcterSelectionSprite;
     public Image weaponSprite;
     public RectTransform xpBar;
-    public static int indexWeaponLevel = 0;
+    public  int indexWeaponLevel = 0;
     //Charachter Selection
     public void OnArrowClick(bool right)
     {
@@ -74,13 +74,11 @@ public class CharachterMenu : MonoBehaviour
     public void UpdateMenu()
     {
         // Weapon
-       // Upgrade to the next weapon
-       
-        if (indexWeaponLevel  < GameManager.instance.weaponPrices.Count)
-        {   // Increment the index
-            Debug.Log(indexWeaponLevel);
-            indexWeaponLevel++;
-            weaponSprite.sprite = GameManager.instance.weaponSprites[indexWeaponLevel];
+        // Upgrade to the next weapon
+        // Increment the index
+            
+            //indexWeaponLevel++;
+            weaponSprite.sprite = GameManager.instance.weaponSprites[GameManager.instance.weapon.weaponLevel];
             if (GameManager.instance.weapon.weaponLevel == GameManager.instance.weaponPrices.Count)
             {
                 upgradeCostText.text = "Max";
@@ -89,7 +87,7 @@ public class CharachterMenu : MonoBehaviour
             {
                 upgradeCostText.text = GameManager.instance.weaponPrices[GameManager.instance.weapon.weaponLevel].ToString();
             }
-        }
+        
         
         // Meta
 
@@ -113,7 +111,6 @@ public class CharachterMenu : MonoBehaviour
             int currentLevelXp = GameManager.instance.GetXpToLevel(currentLevel);
 
             int diff = currentLevelXp - prevLevelXp;
-
             int currentXpIntoLevel = GameManager.instance.experience - prevLevelXp;
 
             float completionRatio = (float)currentXpIntoLevel / (float)diff;
