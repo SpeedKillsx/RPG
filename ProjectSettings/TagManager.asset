@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Actor
+  - Blocking
   - 
   - 
   - 
@@ -40,6 +40,21 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Design
+    uniqueID: 2942188559
+    locked: 0
+  - name: Floor
+    uniqueID: 4225361291
+    locked: 0
+  - name: Actor
+    uniqueID: 1664307487
+    locked: 0
+  - name: Interactive
+    uniqueID: 995953295
+    locked: 0
+  - name: Weapon
+    uniqueID: 112508833
     locked: 0
   - name: Layer 1
     uniqueID: 2425651459
