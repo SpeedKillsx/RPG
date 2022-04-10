@@ -14,9 +14,7 @@ public abstract class Mover : Fighter
     {
         boxCollider = GetComponent<BoxCollider2D>();
     }
-
     
-
     protected virtual void UpdateMotor(Vector3 input)
     {
         pos = transform.localScale;
@@ -25,7 +23,7 @@ public abstract class Mover : Fighter
         //Swap sprite direction 
         // for axis X
         if (moveDelta.x > 0)
-            transform.localScale = new Vector3(Math.Abs(pos.x), Math.Abs(pos.y), pos.z);
+            transform.localScale = new Vector3(Math.Abs(pos.x), pos.y, pos.z);
         else if (moveDelta.x < 0)
             transform.localScale = new Vector3(-(Math.Abs(pos.x)), pos.y, pos.z);
         // Add a push vector, if any
