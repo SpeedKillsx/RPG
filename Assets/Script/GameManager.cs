@@ -146,6 +146,8 @@ public class GameManager : MonoBehaviour
 
         // charge weapons 
         weapon.SetWeaponLevel(int.Parse(data[3]));
-        
+
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+
     }
 }

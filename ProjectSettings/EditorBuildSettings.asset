@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Yanis/Scenes/Scene_Map.unity
-    guid: 44396481a4c78164abf3b40b64fb5d11
-  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: dd3d2ee53aa339e4399ab41de79ac43e
   - enabled: 1
-    path: Assets/Amina/Cainos/Pixel Art Top Down - Basic/Scene/Out.unity
-    guid: 86e89bd9e4a9c5245a015cf17e3c0aae
+    path: Assets/Amina/Scenes/Map.unity
+    guid: 31fa78f0a270c3941a3aecc7a2381d1b
+  - enabled: 1
+    path: Assets/Yanis/Scenes/Scene_Map.unity
+    guid: 44396481a4c78164abf3b40b64fb5d11
   m_configObjects: {}

@@ -285,7 +285,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1664307487
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -6721728136321296765, guid: 72bc6e85e1f334f4492b04fa32a3c62a,
     type: 3}
@@ -564,7 +564,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -69606005
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -3089,7 +3089,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -69606005
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -14964,7 +14964,7 @@ GameObject:
   - component: {fileID: 756627995}
   - component: {fileID: 756627997}
   - component: {fileID: 756627998}
-  m_Layer: 6
+  m_Layer: 15
   m_Name: Small_enemy
   m_TagString: Fighter
   m_Icon: {fileID: 0}
@@ -15009,7 +15009,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1664307487
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7214893647509974784, guid: 72bc6e85e1f334f4492b04fa32a3c62a,
     type: 3}
@@ -15261,7 +15261,7 @@ GameObject:
   - component: {fileID: 857928170}
   - component: {fileID: 857928171}
   - component: {fileID: 857928172}
-  m_Layer: 6
+  m_Layer: 15
   m_Name: HitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15485,7 +15485,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -69606005
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -20851,9 +20851,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1664307487
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -4869357254534750094, guid: 72bc6e85e1f334f4492b04fa32a3c62a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20874,7 +20874,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955838308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 11.03, y: 4.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1120352744}
@@ -21274,7 +21274,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 112508833
-  m_SortingLayer: 5
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -7566632554201152900, guid: 72bc6e85e1f334f4492b04fa32a3c62a,
     type: 3}
@@ -22375,7 +22375,7 @@ GameObject:
   - component: {fileID: 1912584550}
   - component: {fileID: 1912584549}
   - component: {fileID: 1912584551}
-  m_Layer: 7
+  m_Layer: 16
   m_Name: Collisions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26720,7 +26720,8 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   sceneNames:
-  - DungL1
+  - Main
+  - Map
 --- !u!61 &2077901425
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26875,12 +26876,12 @@ PrefabInstance:
     - target: {fileID: 5008213989503362388, guid: 75ef17978275abc48beaa45d6ab4abc4,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5008213989503362388, guid: 75ef17978275abc48beaa45d6ab4abc4,
         type: 3}
       propertyPath: m_SortingLayerID
-      value: 995953295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5008213989503362389, guid: 75ef17978275abc48beaa45d6ab4abc4,
         type: 3}
