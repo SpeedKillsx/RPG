@@ -1668,7 +1668,7 @@ GameObject:
   - component: {fileID: 611620741}
   - component: {fileID: 611620740}
   - component: {fileID: 611620742}
-  m_Layer: 16
+  m_Layer: 7
   m_Name: Collisons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
