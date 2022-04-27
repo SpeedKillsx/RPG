@@ -107844,7 +107844,7 @@ MonoBehaviour:
     maxNormalAngle: 0
   sceneNames:
   - Main
-  - Map
+  - Scene_Map
 --- !u!61 &2077901425
 BoxCollider2D:
   m_ObjectHideFlags: 0
