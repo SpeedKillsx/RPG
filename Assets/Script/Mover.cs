@@ -1,4 +1,6 @@
 using UnityEngine;
+using System;
+using UnityEngine.EventSystems;
 
 public abstract class Mover : Fighter
 {
@@ -7,28 +9,27 @@ public abstract class Mover : Fighter
     private RaycastHit2D hit;
     protected float ySpeed = 0.75f;
     protected float xSpeed = 1.0f;
+    protected Vector3 pos;
     protected virtual void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
     }
-
     
-
     protected virtual void UpdateMotor(Vector3 input)
     {
+        pos = transform.localScale;
         //Rest moveDelta
         moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
-
         //Swap sprite direction 
         // for axis X
         if (moveDelta.x > 0)
-            transform.localScale = Vector3.one;
+            transform.localScale = new Vector3(Math.Abs(pos.x), pos.y, pos.z);
         else if (moveDelta.x < 0)
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-(Math.Abs(pos.x)), pos.y, pos.z);
         // Add a push vector, if any
         moveDelta += pushDirection;
 
-        // Reduce the psuh every frame
+        // Reduce the push every frame
 
         pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushRecoverySpeed);
 

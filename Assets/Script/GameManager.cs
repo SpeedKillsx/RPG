@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
         if (GameManager.instance != null)
         {
             Destroy(gameObject);
+            Destroy(player.gameObject);
             return;
         }
         instance = this;
@@ -146,6 +147,8 @@ public class GameManager : MonoBehaviour
 
         // charge weapons 
         weapon.SetWeaponLevel(int.Parse(data[3]));
-        
+
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+
     }
 }

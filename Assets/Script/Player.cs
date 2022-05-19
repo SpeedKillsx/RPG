@@ -40,4 +40,18 @@ public class Player : Mover
             OnLevelUp();
         }
     }
+
+    public void Heal(int healingAmount)
+    {
+        if (hitPoint == maxHitpoint)
+            return;
+        
+        hitPoint += healingAmount;
+        
+        if (hitPoint > maxHitpoint)
+        {
+            hitPoint = maxHitpoint;
+            GameManager.instance.ShowText("+" + healingAmount.ToString() + "hp", 25, Color.green, transform.position, Vector3.up * 30, 1.0f);
+        }
+    }
 }
