@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fighter
   layers:
   - Default
   - TransparentFX
@@ -13,8 +14,6 @@ TagManager:
   - UI
   - Actor
   - Blocking
-  - 
-  - 
   - 
   - 
   - 
