@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+// comment to test
 public class Chest : Collectable
 {
     public Sprite emptyChest;
